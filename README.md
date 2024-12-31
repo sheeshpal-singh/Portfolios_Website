@@ -1,4 +1,2 @@
-# e-comress
-An e-commerce website is an online platform that allows businesses and individuals to buy and sell products or services via the internet. These websites offer a convenient shopping experience for users, enabling them to browse products, make purchases, and track their orders from anywhere.
-<br> 
+ "Explore my full-stack development portfolio, where I merge front-end and back-end technologies to create dynamic, scalable applications that enhance user interaction and business performance."<br> 
 <h2>t https://sheeshpal-singh.github.io/e-comress/</h2>
