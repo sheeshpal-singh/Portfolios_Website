@@ -1,0 +1,528 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(Gilroy-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', 'sans-serif';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+/*navbar*/
+.nav{
+height: 90px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 50px;
+}
+.nav h3 a{
+    text-decoration: none;
+    color: white;
+}
+.page2{
+    display: flex;
+   gap: 50px;
+}
+.apge h3 a{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 2s ease-in;
+}
+.page2 h3 a:hover{
+border-bottom:3px solid ;
+}
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+.light-mode{
+    background-color: white;
+    color: black;
+}
+
+.light-mode .nav h3 a{
+    background-color: white;
+    color: black;
+}
+.light-mode .page2 h3 a{
+    border-bottom:3px solid transparent ;
+}
+.light-mode .page2 h3 a:hover{
+border-bottom: 3px solid black;
+}
+/*home*/
+.home{
+    height: 380px;
+    width: 100%;
+   
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.myImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.line1{
+    text-align: center;
+}
+.line2{
+    font-size: 45px;
+    text-align: center;
+}
+.line3{
+    font-size: 25px;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.mybtn{
+    text-align: center;
+    height: 40px;
+    width: 130px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color:black;
+}
+.mybtn:hover{
+
+    background-color: wheat;
+    cursor: pointer;
+}
+.light-mode .mybtn{
+    background-color: black;
+    color: white;
+}
+
+.light-mode .mybtn:hover{
+ background-color: rgb(66, 64, 64);
+}
+/* Projects*/
+.project{
+    height: 480px;
+    width: 100%;
+    scroll-behavior: smooth;
+    text-align: center;
+    margin-top: 20px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.box{
+    height: 380px;
+    width: 320px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.box .docter{
+    height: 140px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.box h3{
+    margin-top: 10px;
+}
+
+.docter2{
+    height: 120px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.ecomres{
+    height: 140px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+.light-mode .project{
+ background-color: white;
+ color: black;
+}
+.light-mode .project .box{
+    border: 2px solid black;
+}
+.light-mode .project .ecomres{
+    border: 2px solid black;
+}
+.light-mode .box .docter2{
+    border: 2px solid red;
+
+}
+.light-mode .box .docter{
+    border: 2px solid black;
+
+}
+
+/* Tablet Responsiveness (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .boxes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 45%;  /* Two boxes per row for tablets */
+    }
+
+    .box .docter,
+    .box .docter2,
+    .box .ecomres {
+        height: 130px;
+        width: 130px;  /* Adjust image sizes for tablet */
+    }
+}
+
+/* Desktop Responsiveness (above 1024px) */
+@media (min-width: 1025px) {
+    .boxes {
+        flex-direction: row;
+        justify-content: space-around;  /* Default 3 boxes per row */
+    }
+
+    .box {
+        width: 320px;  /* Keep the original size on desktop */
+    }
+}
+
+
+
+/* Skills Section */
+.skills {
+    height: 400px;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+}
+
+/* Flexbox for Skill Icons */
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;  /* Adjust gap between icons */
+    margin-top: 20px;
+}
+
+/* Skill Item Styling */
+.html, .css, .js {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.html img, .css img, .js img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.light-mode .skills{
+    background-color: white;
+    color:black;
+}
+
+.light-mode .html1{
+    border: 2px solid black;
+}
+.light-mode .css1{
+    border: 2px solid black;
+}
+
+.light-mode .js1{
+    border: 2px solid black;
+}
+.light-mode .php{
+    border: 2px solid black;
+}
+.light-mode .mysql{
+    border: 2px solid black;
+}
+.light-mode .jqu{
+    border: 2px solid black;
+}
+
+.contact{
+    height: 520px;
+    width: 100%;
+    
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.form label{
+    margin-left: 400px;
+}
+
+.form input{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 400px;
+    border: none;
+}
+
+.form textarea{
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 400px;
+    border: none;
+
+}
+.form button{
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin-left: 500px;
+    margin-top: 33px;
+
+}
+.contact h1{
+    text-align: center;
+}
+.light-mode .contact{
+    background-color: white;
+    color: black;
+}
+
+.light-mode form input,textarea{
+ border: 2px solid black;   
+}
+.light-mode  textarea
+{
+    border: 2px solid black;
+}
+.light-mode form button{
+    background-color: black;
+    color: white;
+}
+.light-mode .formoutput{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Mobile Responsiveness (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Navbar adjustments */
+    .nav {
+        padding: 10px 20px;
+        flex-direction: column;  /* Stack the navbar items vertically */
+        height: auto;  /* Allow navbar to shrink */
+    }
+
+    .nav h3 a {
+        font-size: 1.2rem;  /* Adjust the font size of the logo */
+    }
+
+    /* Home section adjustments */
+    .home {
+        height: 300px;  /* Adjust the height for smaller screens */
+    }
+
+    .line1, .line2, .line3 {
+        font-size: 1.2rem;  /* Reduce font size for better readability */
+    }
+
+    .mybtn {
+        font-size: 1rem;  /* Adjust button font size */
+        width: 100px;  /* Adjust button width for mobile */
+    }
+
+    /* Project Section adjustments */
+    .project {
+        height: auto;  /* Allow project section to grow on small screens */
+    }
+
+    .boxes {
+        flex-direction: column;  /* Stack the project boxes vertically */
+        align-items: center;  /* Center align the boxes */
+    }
+
+    .box {
+        width: 90%;  /* Take up 90% of the screen width */
+        margin-bottom: 20px;  /* Add spacing between boxes */
+    }
+
+    .box h3 {
+        font-size: 1.2rem;  /* Adjust the font size of project titles */
+    }
+
+    .box .docter, .box .docter2, .box .ecomres {
+        height: 100px;  /* Adjust icon size for mobile */
+        width: 100px;
+    }
+
+    /* Skills Section adjustments */
+    .skills {
+        height: auto;  /* Allow skill section to grow */
+    }
+
+    .skills h1 {
+        font-size: 2rem;  /* Adjust font size of the skills title */
+    }
+
+    .images {
+        flex-direction: column;  /* Stack the skill icons vertically */
+        align-items: center;  /* Center the icons */
+    }
+
+    .html img, .css img, .js img {
+        height: 80px;  /* Adjust icon size for mobile */
+        width: 80px;
+    }
+
+    /* Contact Section adjustments */
+    .contact {
+        height: auto;  /* Allow contact section to grow */
+    }
+
+    .form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form input, .form textarea {
+        width: 80%;  /* Make form inputs take up most of the screen width */
+        margin-left: 10%;  /* Center align the form inputs */
+    }
+
+    .form button {
+        width: 80%;  /* Make the submit button take up most of the screen width */
+        margin-left: 10%;
+    }
+
+    .form label {
+        font-size: 1rem;  /* Adjust the font size of labels */
+    }
+}
+
+/* Mobile Responsiveness (max-width: 400px) */
+@media (max-width: 400px) {
+    /* Navbar adjustments */
+    .nav {
+        padding: 10px 15px;
+        flex-direction: column;  /* Stack navbar items vertically */
+        height: auto;  /* Allow navbar to shrink */
+    }
+
+    .nav h3 a {
+        font-size: 1rem;  /* Further reduce font size of the logo */
+    }
+
+    /* Home section adjustments */
+    .home {
+        height: 250px;  /* Adjust the height for extremely small screens */
+    }
+
+    .line1, .line2, .line3 {
+        font-size: 1rem;  /* Reduce font size for better readability */
+    }
+
+    .mybtn {
+        font-size: 1rem;  /* Adjust button font size */
+        width: 90px;  /* Adjust button width for smaller screens */
+    }
+
+    /* Project Section adjustments */
+    .project {
+        height: auto;  /* Allow the project section to grow on small screens */
+    }
+
+    .boxes {
+        flex-direction: column;  /* Stack the project boxes vertically */
+        align-items: center;  /* Center the boxes */
+    }
+
+    .box {
+        width: 90%;  /* Make the boxes take up most of the screen width */
+        margin-bottom: 10px;  /* Reduce spacing between boxes */
+    }
+
+    .box h3 {
+        font-size: 1rem;  /* Adjust the font size of project titles */
+    }
+
+    .box .docter, .box .docter2, .box .ecomres {
+        height: 80px;  /* Resize icons/images to fit the screen */
+        width: 80px;
+    }
+
+    /* Skills Section adjustments */
+    .skills {
+        height: auto;  /* Allow skills section to grow */
+    }
+
+    .skills h1 {
+        font-size: 1.5rem;  /* Reduce font size of the skills title */
+    }
+
+    .images {
+        flex-direction: column;  /* Stack skill icons vertically */
+        align-items: center;  /* Center the icons */
+    }
+
+    .html img, .css img, .js img {
+        height: 60px;  /* Reduce the size of icons */
+        width: 60px;
+    }
+
+    /* Contact Section adjustments */
+    .contact {
+        height: auto;  /* Allow contact section to grow */
+    }
+
+    .form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form input, .form textarea {
+        width: 80%;  /* Make form inputs take up most of the screen width */
+        margin-left: 10%;  /* Center align form inputs */
+    }
+
+    .form button {
+        width: 80%;  /* Make the submit button take up most of the screen width */
+        margin-left: 10%;
+    }
+
+    .form label {
+        font-size: 0.9rem;  /* Adjust the font size of labels */
+        text-align: center;
+    }
+}
+
